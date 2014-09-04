@@ -1,0 +1,13 @@
+.center-aln {
+	text-align: center;
+}
+
+.new_villade_position {
+	float: right;
+	/*padding-right: 40px;*/
+}
+
+.creat_village_btn {
+	float: right;
+	padding-top: 20px;
+}

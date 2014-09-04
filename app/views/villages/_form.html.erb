@@ -1,0 +1,26 @@
+<%= form_for @village, :html => { :multipart => true, :class => '',:autocomplete => 'off'} do |f| %>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<%= f.text_field :village_name, :class => "form-control",
+					:placeholder => "Village Name"%>
+				</div>
+			</div></br></br></br>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<%= f.text_area :description, :class => "form-control",
+					:placeholder => "About Village"%>
+				</div>
+			</div></br></br></br></br>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<%= f.text_field :area, :class => "form-control",
+					:placeholder => "Area"%>
+				</div>
+			</div>
+			<div class="creat_village_btn">
+			<button class="btn btn-primary" type="submit">
+                    <span class=""></span>&nbsp;&nbsp;
+                    Create Village
+                </button>
+                </div>
+			<% end %>

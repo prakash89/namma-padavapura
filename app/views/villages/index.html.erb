@@ -1,0 +1,47 @@
+<div class="navbar-wrapper">
+	<div class="container">
+		<div class="jumbotron">
+			<div class="new_villade_position">
+				<a class="btn btn-primary" href="/villages/new" type="submit">
+					Create New Village
+				</a>
+			</div>
+		<!-- <h2>List of Villages</h2>
+		<h4>Sunkathonnur</h4>
+		<h4>Melukote</h4>
+        <h4>Kyathanahalli</h4>
+        <h4>Chikkade</h4>
+        <h4>Chinukuruli</h4>
+        <h4>Hiremarali</h4>
+        <h4>KRS</h4> -->
+        <table class="table table-striped table-hover">
+        	<thead>
+        		<tr>
+        			<th class="coupon-width">List of Villages</th>
+        			<th class="coupon-width">Area in Hectares</th>
+        			<th class="Last-access">Action</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<% @village.each do |vlg| %> 
+        		<tr>
+        			<td>
+        				<div><%= vlg.village_name %></div>
+        			</td>
+        			<td>
+        				<div><%= vlg.area %></div>
+        			</td>
+        			<td>
+        				<%= link_to image_tag("icon-edit.png"), edit_village_path(vlg.id), :title => "Edit", 'data-no-turbolink' => true %>
+        				<!-- <a title="Delete" method="delete" data-toggle="modal" data-target="#document-delete-popup" data-id="<%= vlg.id%>" data-confirm="Are u sure"> -->
+        					<%= link_to image_tag("icon-deleted.png"), village_path(vlg.id), method: :delete, data: {confirm: 'Are u sure'}, :title => "Delete"  %>
+        				</a>
+        			</td>
+        		</tr>
+        		<% end %>
+        	</tbody>
+        </table>
+        <%= paginate @village %><br>
+        </div>
+    </div>
+</div>
