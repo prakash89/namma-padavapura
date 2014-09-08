@@ -11,3 +11,33 @@
 	float: right;
 	padding-top: 20px;
 }
+
+.creat_school_btn {
+	float: right;
+	padding-top: 20px;
+}
+
+.journal-entry-devider {
+    border-bottom: 2px solid #333; margin: 20px -20px;
+}
+
+.edit_btn_position {
+	float: right;
+	padding-bottom: 10px;
+}
+
+.header-border{
+    border-top: 5px solid #580000;
+}
+
+.text_color_place {
+	color: #660033;
+}
+
+.back_btn_position {
+	padding-left: 75px;
+}
+
+.create_btn_position_fix {
+	padding-right: 15px;
+}

@@ -1,26 +1,26 @@
-<%= form_for @village, :html => { :multipart => true, :class => '',:autocomplete => 'off'} do |f| %>
+<%= form_for @hospital, :html => { :multipart => true, :class => '',:autocomplete => 'off'} do |f| %>
 <div class="form-group">
 	<div class="col-sm-12">
-		<%= f.text_field :village_name, :class => "form-control",
-		:placeholder => "Village Name"%>
+		<%= f.text_field :name, :class => "form-control",
+		:placeholder => "Hospital Name"%>
 	</div>
 </div></br></br></br>
 <div class="form-group">
 	<div class="col-sm-12">
-		<%= f.text_area :description, :class => "form-control",
-		:placeholder => "About Village"%>
+		<%= f.text_field :type, :class => "form-control",
+		:placeholder => "Type"%>
 	</div>
 </div></br></br></br></br>
 <div class="form-group">
 	<div class="col-sm-12">
-		<%= f.text_field :area, :class => "form-control",
-		:placeholder => "Area"%>
+		<%= f.text_area :address, :class => "form-control",
+		:placeholder => "Adress"%>
 	</div>
 </div>
 <div class="creat_village_btn create_btn_position_fix">
 	<button class="btn btn-primary" type="submit">
 		<span class=""></span>&nbsp;&nbsp;
-		Create Village
+		Create Hospital
 	</button>
 </div>
 <% end %>

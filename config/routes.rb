@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'villages/new'
 
   root  "home#new"
   get 'home/new'
   resources :home
+  resources :schools
+  resources :hospitals
+  resources :tourist_places
   resources :villages
   get '/galary' => 'home#galary_page', :as => :galary
 

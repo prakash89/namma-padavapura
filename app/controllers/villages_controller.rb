@@ -1,6 +1,6 @@
 class VillagesController < ApplicationController
 	def index
-		@village = Village.order("village_name").page(params[:page]).per(5)
+		@village = Village.all
 	end
 
 	def new
