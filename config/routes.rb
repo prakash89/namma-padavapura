@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'map/new'
+
+  get 'home_page/new'
+
   root  "home#new"
   get 'home/new'
   resources :home
@@ -8,6 +12,9 @@ Rails.application.routes.draw do
   resources :tourist_places
   resources :villages
   get '/galary' => 'home#galary_page', :as => :galary
+  get '/contact' => 'home_page#contact', :as => :contact 
+  post '/email_contact' => 'home_page#email_contact', :as => :email_contact
+  get '/map' => 'map#new', :as => :map
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
