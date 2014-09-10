@@ -15,4 +15,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap.min
+//= require utility
+//= require event
 //= require_tree .

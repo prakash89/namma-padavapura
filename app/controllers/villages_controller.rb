@@ -1,6 +1,6 @@
 class VillagesController < ApplicationController
 	def index
-		@village = Village.all
+		@village = Village.search(params[:search])
 	end
 
 	def new
