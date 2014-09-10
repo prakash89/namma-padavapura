@@ -1,6 +1,6 @@
 class VillagesController < ApplicationController
 	def index
-		@village = Village.search(params[:search])
+		@village = Village.search(params[:search]).order("village_name").page(params[:page]).per(10)
 	end
 
 	def new
