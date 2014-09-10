@@ -12,6 +12,10 @@ class HomePageController < ApplicationController
       flash[:notice] = "The Contact Information has been sent"
       redirect_to root_url
   end
+  
   def contact
+  end
+
+  def about_us
   end
 end

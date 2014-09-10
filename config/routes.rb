@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/contact' => 'home_page#contact', :as => :contact 
   post '/email_contact' => 'home_page#email_contact', :as => :email_contact
   get '/map' => 'map#new', :as => :map
+  get '/about_us' => 'home_page#about_us', :as => :about_us
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
