@@ -1,6 +1,9 @@
 <div class="navbar-wrapper">
 	<div class="container">
-		<div class="jumbotron">
+    <div class="jumbotron">
+    <%#= render :partial => "home_page/header" %>
+    <h1>Namma Pandavapura</h1>
+    <div class="header-border border_position"></div>
 			<div class="new_villade_position">
 				<a class="btn btn-primary" href="/villages/new" type="submit">
 					Create New Village
@@ -27,6 +30,7 @@
               <tr>
                <th class="coupon-width">List of Villages</th>
                <th class="coupon-width">Area in Hectares</th>
+               <th class="coupon-width">Village Code</th>
                <th class="Last-access">Action</th>
            </tr>
        </thead>
@@ -38,6 +42,9 @@
         </td>
         <td>
             <div><%= vlg.area %></div>
+        </td>
+        <td>
+            <div><%= vlg.village_code %></div>
         </td>
         <td>
             <%= link_to image_tag("icon-edit.png"), edit_village_path(vlg.id), :title => "Edit", 'data-no-turbolink' => true %>

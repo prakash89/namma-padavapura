@@ -42,7 +42,7 @@ class VillagesController < ApplicationController
 	private
 
 	def village_params
-		params.require(:village).permit(:village_name, :description, :area)
+		params.require(:village).permit(:village_name, :description, :area, :village_code)
 	end
 
 end
