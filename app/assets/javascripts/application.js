@@ -17,4 +17,5 @@
 //= require bootstrap.min
 //= require utility
 //= require event
+//= require ajax_setup
 //= require_tree .

@@ -39,8 +39,8 @@
                   <% if current_user %>
                   <%= link_to "Log out", log_out_path %>
                   <% else %>
-                  <%= link_to "Sign up", new_user_path %> or
-                  <%= link_to "log in", new_session_path %>
+                  <%= link_to "Sign up", new_user_path, :remote => true %> or
+                  <%= link_to "log in", new_session_path, :remote => true %>
                   <% end %>
                 </div>
               </li>

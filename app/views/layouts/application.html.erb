@@ -26,6 +26,9 @@
 <body>
 
 <%= yield %>
+<%= render :partial => 'pop_ups' %>
 
+<%#* Display Hidden Overlays -%>
+    <%= render :partial => "overlays" -%>
 </body>
 </html>

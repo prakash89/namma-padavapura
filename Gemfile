@@ -30,6 +30,10 @@ gem 'kaminari', '~> 0.16.1'
 
 gem "bcrypt-ruby", :require => "bcrypt"
 
+gem 'pry', '~> 0.10.1'
+
+gem 'pry-rails', '~> 0.3.2'
+
 #gem 'calendar_date_select', :git => 'git://github.com/paneq/calendar_date_select.git'
 
 # Use ActiveModel has_secure_password

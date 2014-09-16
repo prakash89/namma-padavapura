@@ -6,11 +6,16 @@ end
 
 def create
   @user = User.new(user_params)
+  	respond_to do |format|
   if @user.save
-    redirect_to root_url, :notice => "Signed up!"
+  		format.html {redirect_to root_url}
+    # , :notice => "Signed up!"
+    format.js {render js: "window.location.href = '#{root_url}'"}
   else
-    render "new"
+    format.js { render :new }
+	format.html {render :new }
   end
+end
 end
 
 private 

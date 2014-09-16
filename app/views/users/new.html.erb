@@ -4,36 +4,6 @@
     <div class="header-border border_position"></div>
 <h1>Sign Up</h1>
 
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @user.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div>
-    <%= f.label :email %><br />
-    <%= f.text_field :email, :class => "signup_field_width" %>
-  </div></br>
-  <div>
-    <%= f.label :password %><br />
-    <%= f.password_field :password, :class => "signup_field_width" %>
-  </div></br>
-  <div>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, :class => "signup_field_width" %>
-  </div></br></br>
-  <button class="btn btn-primary" type="submit">
-    <span class=""></span>&nbsp;&nbsp;
-    Sign Up
-  </button>
-      <a class="btn btn-primary" href="/" type="cancel">
-        Back
-      </a>
-<% end %>
+<%= render :partial => "form" %>
 </div>
 
