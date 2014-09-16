@@ -1,0 +1,47 @@
+<%= form_for @event, :html => { :multipart => true, :class => '',:autocomplete => 'off'} do |f| %>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :event_name, :class => "form-control",
+		:placeholder => "Event Name"%>
+	</div>
+</div></br></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_area :address, :class => "form-control",
+		:placeholder => "Address"%>
+	</div>
+</div></br></br></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :organized_by, :class => "form-control",
+		:placeholder => "Organized By"%>
+	</div>
+</div></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :time, :class => "form-control",
+		:placeholder => "Time"%>
+	</div>
+</div></br></br>
+
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :date, :class => "form-control my_datepicker datepicker_expires_on",
+		:placeholder => "Date"%>
+	</div>
+</div></br></br>
+
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_area :about_event, :class => "form-control my_datepicker datepicker_expires_on",
+		:placeholder => "About Event"%>
+	</div>
+</div>
+
+<div class="creat_village_btn create_btn_position_fix">
+	<button class="btn btn-primary" type="submit">
+		<span class=""></span>&nbsp;&nbsp;
+		Create Event
+	</button>
+</div>
+<% end %>

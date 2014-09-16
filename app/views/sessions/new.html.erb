@@ -1,0 +1,23 @@
+<div class="container" style="background:#eee; height: 1000px">
+<h1>Namma Pandavapura</h1>
+    <div class="header-border border_position"></div>
+<h1>Log in</h1>
+
+<%= form_for :user, :url => sessions_path do |f| %>
+  <div>
+    <%= f.label :email %><br />
+    <%= f.text_field :email, :class => "signup_field_width" %>
+  </div></br>
+  <div>
+    <%= f.label :password %><br />
+    <%= f.password_field :password, :class => "signup_field_width" %>
+  </div></br></br>
+  <button class="btn btn-primary" type="submit">
+		<span class=""></span>&nbsp;&nbsp;
+		Sign In
+	</button>
+			<a class="btn btn-primary" href="/" type="cancel">
+				Back
+			</a>
+<% end %>
+</div>

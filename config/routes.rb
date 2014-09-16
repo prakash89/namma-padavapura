@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'map/new'
-
   get 'home_page/new'
 
   root  "home#new"
@@ -11,11 +9,15 @@ Rails.application.routes.draw do
   resources :hospitals
   resources :tourist_places
   resources :villages
+  resources :events
+  resources :users
+  resources :sessions
   get '/galary' => 'home#galary_page', :as => :galary
   get '/contact' => 'home_page#contact', :as => :contact 
   post '/email_contact' => 'home_page#email_contact', :as => :email_contact
   get '/map' => 'map#new', :as => :map
   get '/about_us' => 'home_page#about_us', :as => :about_us
+  get "log_out" => "sessions#destroy", :as => "log_out"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

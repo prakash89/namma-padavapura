@@ -1,0 +1,50 @@
+<div class="container" style="background:#eee; height: 1000px">
+<h1>Namma Pandavapura</h1>
+    <div class="header-border border_position"></div>
+	<div class="creat_school_btn">
+		<a class="btn btn-primary" href="/events/new" type="submit">
+			Create New Event
+		</a>
+	</div>
+	<h2><u>List of Events</u></h2>
+	<!-- <div class="header-border"></div> -->
+	<% @event.each do |eve|%>
+	<div>
+		<div>
+			<h4 class="text_color_place">*Event Name:</h4>
+			<%= eve.place_name %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*Address:</h4>
+			<%= eve.address %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*Organized By:</h4>
+			<%= eve.organized_by %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*Time:</h4>
+			<%= eve.time %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*Date:</h4>
+			<%= eve.date %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*About Event:</h4>
+			<%= eve.about_event %>
+		</div>
+		<div class="edit_btn_position">
+			<%= link_to "Edit", edit_event_path(eve.id), :class=> "btn btn-primary", 'data-no-turbolink' => true %>
+			
+			<%= link_to "Delete", event_path(eve.id), :class=> "btn btn-primary", method: :delete, data: {confirm: 'Are u sure'} %>
+		</div>
+	</div>
+	<div class="row journal-entry-devider"> </div>
+	<% end %>
+	<a class="btn btn-primary" href="/" type="cancel">
+		Back
+	</a>
+	<a onclick="javascript:print(); return false;" href="#" class="btn btn-primary"><span class=""></span>&nbsp;Print
+    </a>
+</div>

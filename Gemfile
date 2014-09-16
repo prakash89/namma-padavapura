@@ -28,6 +28,10 @@ gem 'spring',        group: :development
 
 gem 'kaminari', '~> 0.16.1'
 
+gem "bcrypt-ruby", :require => "bcrypt"
+
+#gem 'calendar_date_select', :git => 'git://github.com/paneq/calendar_date_select.git'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
