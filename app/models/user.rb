@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  rolify
 	# attr_accessible :email, :password, :password_confirmation
   
   attr_accessor :password
@@ -24,4 +25,9 @@ class User < ActiveRecord::Base
       self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
     end
   end
+
+  def after_confirmation
+    self.add_role :User unless self.roles.present?
+  end
+  
 end

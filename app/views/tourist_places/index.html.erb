@@ -1,11 +1,13 @@
 <div class="container" style="background:#eee; height: 1000px">
 <h1>Namma Pandavapura</h1>
     <div class="header-border border_position"></div>
+    <% if current_user.has_role? :admin %>
 	<div class="creat_school_btn">
 		<a class="btn btn-primary" href="/tourist_places/new" type="submit">
 			Create New School
 		</a>
 	</div>
+	<% end %>
 	<h2><u>List of Place</u></h2>
 	<!-- <div class="header-border"></div> -->
 	<% @place.each do |plc|%>
@@ -22,11 +24,13 @@
 			<h4 class="text_color_place">*About Place:</h4>
 			<%= plc.description %>
 		</div>
+		<% if current_user.has_role? :admin %>
 		<div class="edit_btn_position">
 			<%= link_to "Edit", edit_tourist_place_path(plc.id), :class=> "btn btn-primary", 'data-no-turbolink' => true %>
 			
 			<%= link_to "Delete", tourist_place_path(plc.id), :class=> "btn btn-primary", method: :delete, data: {confirm: 'Are u sure'} %>
 		</div>
+		<% end %>
 	</div>
 	<div class="row journal-entry-devider"> </div>
 	<% end %>
