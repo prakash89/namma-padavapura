@@ -1,5 +1,6 @@
 class VillagesController < ApplicationController
 	def index
+		# binding.pry
 		@village = Village.search(params[:search]).order("village_name").page(params[:page]).per(10)
 	end
 
