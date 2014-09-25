@@ -1,0 +1,66 @@
+<div class="navbar-wrapper">
+	<div class="container" style="background:#eee; height: 1500px">
+		<h1>Namma Pandavapura</h1>
+		<div class="header-border border_position"></div>
+		<div class="new_villade_position">
+    	<a class="btn btn-primary" href="/" type="cancel">
+    		Home
+    	</a>
+    </div></br></br>
+		<h2><u>Elected Representatives</u></h2></br>
+		<table class="table table-striped table-hover">
+		<thead>
+			<tr>
+				<th class="entry-num center-align-name">Name</th>
+				<th class="date center-align-name">Designation</th>
+				<th class="name center-align-name">Address</th>
+				<%# if current_user.has_role? :admin %>
+				<th class="action center-align-name">Contact Number</th>
+				<th class="action center-align-name">Photo</th>
+				<%# end %>
+			</tr>
+		</thead>
+		<tbody class="table-body-background change-font">
+			<%# @school.each do |scl|%>
+			<tr class="">
+				<td><h4><strong>Sri.K.S.Puttanniah</strong></h4></td>
+				<!-- <div class='verticalLine'></div> -->
+				<td><h4>Honorable Member of Legistrative Assembly  MLA</h4></td>
+				<td><h4>Kyathanahalli, Pandavapura Taluk, Mandya District</h4></td>
+				<td><h4>Off:08236254230 Home:08236254014 MOb:9481545667</h4></td>
+				<td><img src="assets/puttaninah 1.jpg" alt="First slide"></td>
+				<%# if current_user.has_role? :admin %>
+				
+				<%# end %>
+			</tr>
+			<tr class="">
+				<td><h4><strong>Sri.C.S. Puttaraju</strong></h4></td>
+				<td><h4>Honorable Lok Sabha Member MP</h4></td>
+				<td><h4>Krishna Nagara, 1stStage,Pandavapura [Taluk] Mandya[District]</h4></td>
+				<td><h4>9845113345</h4></td>
+				<td><img src="assets/cs puttaraju.jpg" alt="First slide"></td>
+				<%# if current_user.has_role? :admin %>
+				
+				<%# end %>
+			</tr>
+			<%# end %>
+		</tbody>
+	</table></br>
+	<h2><u>City/Town Summary</u></h2></br>
+	<h4><strong>Population :</strong> 20423</h4>
+	<h4><strong>Area :</strong> 2.50 sq.km</h4>
+	<h4><strong>Number of Properties :</strong> 6191</h4>
+	<h4><strong>Number of Wards :</strong> 18</h4>
+	<h4><strong>Length of Roads :</strong> 42km</h4>
+	<h4><strong>Total Water Supply :</strong> 1.8MLD</h4>
+	<h4><strong>Per Capita Water Supply :</strong> 100LPCD</h4>
+	<h4><strong>Summer Temp :</strong> 32’c</h4>
+	<h4><strong>Winter Temp :</strong> 21’c</h4></br>
+
+	<!-- <h2>Weather</h2> -->
+	<!--<script language="JavaScript" type="text/javascript"> 
+ document.write('<script language="JavaScript" src="http://www.myweather2.com/Plugins/weather/general.ashx?type=js&n=2&t=24&x=f1_day&inc=False&w=230&h=320&headerbgcolor=284252&headertextcolor=080808 &temp_unit=1&windspeed_unit=2&puref=9e1be826-fbfc-4c87-95ac-c1f3ea767167&cb=' + Math.random() + '" type="text/javascript"><\/scr' + 'ipt>');
+ </script><noscript><a href="http://www.myweather2.com/Mandya/India/Karnataka/Rails.aspx" title="Rails">Rails weather forecast from Weather2</a></noscript>-->
+
+	</div>
+</div>

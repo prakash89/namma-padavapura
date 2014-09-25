@@ -123,3 +123,11 @@
 .photo-padding-fix {
     padding-top: 10px;
 }
+
+.verticalLine {
+    border-left: thick solid  #000000 ;
+}
+
+.center-align-name {
+    text-align: center;
+}

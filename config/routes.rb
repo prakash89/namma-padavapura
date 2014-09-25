@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/map' => 'map#new', :as => :map
   get '/about_us' => 'home_page#about_us', :as => :about_us
   get "log_out" => "sessions#destroy", :as => "log_out"
+  get '/information' => 'home_page#information', :as => :information
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

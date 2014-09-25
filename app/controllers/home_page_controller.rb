@@ -18,4 +18,8 @@ class HomePageController < ApplicationController
 
   def about_us
   end
+
+  def information
+  end
+  
 end

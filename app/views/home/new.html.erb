@@ -21,8 +21,10 @@
               <li class="active"><a href="/">Home</a></li>
               <li><a href="<%= about_us_path %>">About</a></li>
               <li><a href="<%= contact_path %>">Contact</a></li>
-              <li><a href="<%= events_path %>">Events</a></li>
-              <li class="dropdown">
+              <li><a href="<%= villages_path %>">List of Villages</a></li>
+              <li><a href="/galary">Gallary</a></li>
+              <li><a href="/information">Information</a></li>
+              <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li><a href="#">Action</a></li>
@@ -33,17 +35,17 @@
                   <li><a href="#">Separated link</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
               <div id="user_nav" class="signup_btn_position">
-                  <% if current_user %>
-                  <%= link_to "Log out", log_out_path %>
-                  <% else %>
-                  <%= link_to "Sign up", new_user_path, :remote => true %> or
-                  <%= link_to "log in", new_session_path, :remote => true %>
-                  <% end %>
+                  <%# if current_user %>
+                  <%#= link_to "Log out", log_out_path %>
+                  <%# else %>
+                  <%#= link_to "Sign up", new_user_path, :remote => true %> or
+                  <%#= link_to "log in", new_session_path, :remote => true %>
+                  <%# end %>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -134,11 +136,11 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <h2 class="featurette-heading">Governament Bus Stand. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Bus service is provided by KSRTC runs buses that connect Pandavapura to other places in Karnataka and a few buses to other states. It was started service on 2006 inagurated by Chaluvarayaswamy former transport minster Karnataka governament.</p>
+          <div class="lead">Bus service is provided by KSRTC runs buses that connect Pandavapura to other places in Karnataka and a few buses to other states. It was started service on 2007 inagurated by Kumaraswamy former chief minster Karnataka governament.</div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <img class="featurette-image img-responsive" src="assets/bus.jpg" alt="Generic placeholder image">
         </div>
       </div>
@@ -146,24 +148,24 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <img class="featurette-image img-responsive" src="assets/market.jpg" alt="Generic placeholder image">
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <h2 class="featurette-heading">Center Market. <span class="text-muted">You will get everything.</span></h2>
-          <p class="lead">It is there in the heart of the city and most of the shops are located in this place. Every Thursday, a farmer's market (called as "Santhe" in Kannada) is held in the heart of the town, where farmers directly sell their agricultural products</p>
+          <p class="lead">It is there in the heart of the city and most of the shops are located in this place. Every Thursday, a farmer's market (called as "Santhe" in Kannada) is held in the heart of the town, here farmers directly sell their agricultural products</p>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <h2 class="featurette-heading">Governament Offices. <span class="text-muted">Go and get your document.</span></h2>
           <p class="lead">Most of the taluk Governament offices are there in Pandavapura city but some of are there in related hobali head quatres.
             "mini vidanashowda" is the center of attraction in this city. </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-6">
             <img class="featurette-image img-responsive" src="assets/office.jpg" alt="Generic placeholder image">
           </div>
         </div>
