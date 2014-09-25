@@ -36,6 +36,10 @@ gem 'pry-rails', '~> 0.3.2'
 
 gem 'rolify', '~> 3.4.1'
 
+gem "rmagick"
+
+gem "carrierwave"
+
 #gem 'calendar_date_select', :git => 'git://github.com/paneq/calendar_date_select.git'
 
 # Use ActiveModel has_secure_password

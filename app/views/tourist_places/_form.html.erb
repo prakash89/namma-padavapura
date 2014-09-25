@@ -16,7 +16,16 @@
 		<%= f.text_area :description, :class => "form-control",
 		:placeholder => "Description"%>
 	</div>
+</div></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.file_field :image %>
+	</div>
 </div>
+<!-- <div> -->
+    <%#= f.label :remote_image_url, "or image URL" %><br />
+    <%#= f.text_field :remote_image_url %>
+  <!-- </div> -->
 <div class="creat_village_btn create_btn_position_fix">
 	<button class="btn btn-primary" type="submit">
 		<span class=""></span>&nbsp;&nbsp;

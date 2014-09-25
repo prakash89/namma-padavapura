@@ -42,6 +42,6 @@ class TouristPlacesController < ApplicationController
 	private
 
 	def place_params
-		params.require(:tourist_place).permit(:place_name, :address, :description)
+		params.require(:tourist_place).permit(:place_name, :address, :description, :image, :remote_image_url)
 	end
 end

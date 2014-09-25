@@ -8,9 +8,9 @@ class SchoolsController < ApplicationController
   end
 
   def create
-  	@village = Village.find(params[:id])
-		# @school = School.new(school_params)
-		@school = @village.schools.build(school_params)
+  	# @village = Village.find(params[:id])
+		@school = School.new(school_params)
+		# @school = @village.schools.build(school_params)
 		if @school.save
 			respond_to 	do |format|
 				format.html {redirect_to schools_path}
