@@ -2,11 +2,16 @@
 <h1>Namma Pandavapura</h1>
     <div class="header-border border_position"></div>
     <%# if current_user.has_role? :admin %>
-	<div class="creat_school_btn">
+	<!-- <div class="creat_school_btn">
 		<a class="btn btn-primary" href="/schools/new" type="submit">
 			Create New School
 		</a>
-	</div>
+	</div> -->
+	<div class="new_villade_position">
+    	<a class="btn btn-primary" href="/" type="cancel">
+    		Home
+    	</a>
+    </div>
 	<%# end %>
 	<h2>List of Schools in City</h2>
 	<table class="table table-striped table-hover">
@@ -16,7 +21,7 @@
 				<th class="date">Type</th>
 				<th class="name">Landmark</th>
 				<%# if current_user.has_role? :admin %>
-				<th class="action">Action</th>
+				<!-- <th class="action">Action</th> -->
 				<%# end %>
 			</tr>
 		</thead>
@@ -27,11 +32,11 @@
 				<td><%= scl.type %></td>
 				<td><%= scl.address %></td>
 				<%# if current_user.has_role? :admin %>
-				<td>
-					<%= link_to image_tag("icon-edit.png"), edit_school_path(scl.id), :title => "Edit", 'data-no-turbolink' => true %>
+				<!-- <td>
+					<%#= link_to image_tag("icon-edit.png"), edit_school_path(scl.id), :title => "Edit", 'data-no-turbolink' => true %>
 					
-					<%= link_to image_tag("icon-deleted.png"), school_path(scl.id), method: :delete, data: {confirm: 'Are u sure'}, :title => "Delete"  %>
-				</td>
+					<%#= link_to image_tag("icon-deleted.png"), school_path(scl.id), method: :delete, data: {confirm: 'Are u sure'}, :title => "Delete"  %>
+				</td> -->
 				<% end %>
 			</tr>
 			<%# end %>
