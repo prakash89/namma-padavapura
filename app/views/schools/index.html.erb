@@ -7,44 +7,5 @@
 			Create New School
 		</a>
 	</div> -->
-	<div class="new_villade_position">
-    	<a class="btn btn-primary" href="/" type="cancel">
-    		Home
-    	</a>
-    </div>
-	<%# end %>
-	<h2>List of Schools in City</h2>
-	<table class="table table-striped table-hover">
-		<thead>
-			<tr>
-				<th class="entry-num">School Name</th>
-				<th class="date">Type</th>
-				<th class="name">Landmark</th>
-				<%# if current_user.has_role? :admin %>
-				<!-- <th class="action">Action</th> -->
-				<%# end %>
-			</tr>
-		</thead>
-		<tbody class="table-body-background change-font">
-			<% @school.each do |scl|%>
-			<tr class="">
-				<td><%= scl.name %></td>
-				<td><%= scl.type %></td>
-				<td><%= scl.address %></td>
-				<%# if current_user.has_role? :admin %>
-				<!-- <td>
-					<%#= link_to image_tag("icon-edit.png"), edit_school_path(scl.id), :title => "Edit", 'data-no-turbolink' => true %>
-					
-					<%#= link_to image_tag("icon-deleted.png"), school_path(scl.id), method: :delete, data: {confirm: 'Are u sure'}, :title => "Delete"  %>
-				</td> -->
-				<% end %>
-			</tr>
-			<%# end %>
-		</tbody>
-	</table>
-	<a class="btn btn-primary" href="/" type="cancel">
-		Back
-	</a>
-	<a onclick="javascript:print(); return false;" href="#" class="btn btn-primary"><span class=""></span>&nbsp;Print
-    </a>
+	<%= render :partial => "index_form" %>
 </div>

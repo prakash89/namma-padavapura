@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140925091720) do
+ActiveRecord::Schema.define(version: 20140929065454) do
 
   create_table "events", force: true do |t|
     t.string   "event_name"
@@ -28,6 +28,26 @@ ActiveRecord::Schema.define(version: 20140925091720) do
     t.string   "name"
     t.string   "address"
     t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mysoretrains", force: true do |t|
+    t.integer  "code"
+    t.string   "train_name"
+    t.string   "arrives"
+    t.string   "departure"
+    t.string   "stop_time"
+    t.string   "days"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "offices", force: true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.text     "about"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -58,6 +78,17 @@ ActiveRecord::Schema.define(version: 20140925091720) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
+  end
+
+  create_table "trains", force: true do |t|
+    t.integer  "code"
+    t.string   "train_name"
+    t.string   "arrives"
+    t.string   "departure"
+    t.string   "stop_time"
+    t.string   "days"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

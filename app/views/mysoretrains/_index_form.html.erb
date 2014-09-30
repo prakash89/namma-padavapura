@@ -1,0 +1,43 @@
+<!-- <div class="creat_school_btn">
+		<a class="btn btn-primary" href="/mysoretrains/new" type="submit">
+			Create New Hospital
+		</a>
+	</div> -->
+<h2>List of Trains towards Mysore</h2>
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th class="entry-num">Code</th>
+					<th class="date">Train Name</th>
+					<th class="name">Arraives</th>
+					<th class="name">Departure</th>
+					<th class="name">Stop Time</th>
+					<th class="name">Days</th>
+					<%# if current_user.has_role? :admin %>
+					<!-- <th class="action">Action</th> -->
+					<%# end %>
+				</tr>
+			</thead>
+			<tbody class="table-body-background change-font">
+				<% @mtrain.each do |mtr|%>
+				<tr class="">
+					<td><%= mtr.code %></td>
+					<td><%= mtr.train_name %></td>
+					<td><%= mtr.arrives %></td>
+					<td><%= mtr.departure %></td>
+					<td><%= mtr.stop_time %></td>
+					<td><%= mtr.days %></td>
+					<%# if current_user.has_role? :admin %>
+					<!-- <td>
+						<%#= link_to image_tag("icon-edit.png"), edit_hospital_path(hos.id), :title => "Edit", 'data-no-turbolink' => true %>
+						
+						<%#= link_to image_tag("icon-deleted.png"), hospital_path(hos.id), method: :delete, data: {confirm: 'Are u sure'}, :title => "Delete"  %>
+					</td> -->
+					<%# end %>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<a class="btn btn-primary" href="/" type="cancel">
+			Back
+		</a>

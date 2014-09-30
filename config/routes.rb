@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   get 'home_page/new'
 
   root  "home#new"
@@ -10,8 +11,11 @@ Rails.application.routes.draw do
   resources :tourist_places
   resources :villages
   resources :events
+  resources :offices
+  resources :trains
   resources :users
   resources :sessions
+  resources :mysoretrains
   get '/galary' => 'home#galary_page', :as => :galary
   get '/contact' => 'home_page#contact', :as => :contact 
   post '/email_contact' => 'home_page#email_contact', :as => :email_contact
@@ -19,6 +23,7 @@ Rails.application.routes.draw do
   get '/about_us' => 'home_page#about_us', :as => :about_us
   get "log_out" => "sessions#destroy", :as => "log_out"
   get '/information' => 'home_page#information', :as => :information
+  get '/pan-to-mysore' => 'train#pan_to_mysore', :as => :pan_to_mysore
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

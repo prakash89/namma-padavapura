@@ -1,0 +1,53 @@
+<div class="container" style="background:#eee; height: 2500px">
+<h1>Namma Pandavapura</h1>
+    <div class="header-border border_position"></div>
+    <%# if current_user.has_role? :admin %>
+	<div class="creat_school_btn">
+		<a class="btn btn-primary" href="/offices/new" type="submit">
+			Create New Place
+		</a>
+	</div>
+	<!-- <div class="new_villade_position">
+    	<a class="btn btn-primary" href="/" type="cancel">
+    		Home
+    	</a>
+    </div> -->
+	<%# end %>
+	<h2><u>List of Offices in City</u></h2>
+	<!-- <div class="header-border"></div> -->
+	<% @office.each do |ofc|%>
+	<div>
+		<div>
+			<h4 class="text_color_place">*Office Name:</h4>
+			<%= ofc.name %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*Address:</h4>
+			<%= ofc.address %>
+		</div>
+		<div>
+			<h4 class="text_color_place">*About Office:</h4>
+			<%= ofc.about %>
+		</div>
+
+        <div>
+			<h4 class="text_color_place">*Office Image:</h4>
+            <%= image_tag ofc.image_url(:thumb) %>
+        </div>
+
+		<%# if current_user.has_role? :admin %>
+		<div class="edit_btn_position">
+			<%= link_to "Edit", edit_office_path(ofc.id), :class=> "btn btn-primary", 'data-no-turbolink' => true %>
+			
+			<%= link_to "Delete", office_path(ofc.id), :class=> "btn btn-primary", method: :delete, data: {confirm: 'Are u sure'} %>
+		</div>
+		<%# end %>
+	</div>
+	<div class="row journal-entry-devider"> </div>
+	<% end %>
+	<a class="btn btn-primary" href="/" type="cancel">
+		Back
+	</a>
+	<a onclick="javascript:print(); return false;" href="#" class="btn btn-primary"><span class=""></span>&nbsp;Print
+    </a>
+</div>

@@ -1,0 +1,69 @@
+<div class="container" style="background:#eee; height: 1000px">
+<h1>Namma Pandavapura</h1>
+    <div class="header-border border_position"></div>
+    <%# if current_user.has_role? :admin %>
+	<!-- <div class="creat_school_btn">
+		<a class="btn btn-primary" href="/trains/new" type="submit">
+			Create New Hospital
+		</a>
+	</div> -->
+	<div class="new_villade_position">
+    	<a class="btn btn-primary" href="/" type="cancel">
+    		Home
+    	</a>
+    </div>
+	<%# end %>
+	<ul class="nav nav-tabs" id="myTab">
+        <li class="active">
+          <a href="<%= trains_path %>" class="ui-tabs-anchor" id="preference_required_field">Pandavapura - Bangalure</a>
+        </li>
+        <li class="">
+          <a href="<%= mysoretrains_path %>" data-remote="true"
+             class="ui-tabs-anchor" id="preference_edit_favorite">Pandavapura - Mysure</a>
+        </li>
+        </ul>
+    <div class="testing_ajax">
+    	
+		<h2>List of Trains towards Bangalure</h2>
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th class="entry-num">Code</th>
+					<th class="date">Train Name</th>
+					<th class="name">Arraives</th>
+					<th class="name">Departure</th>
+					<th class="name">Stop Time</th>
+					<th class="name">Days</th>
+					<%# if current_user.has_role? :admin %>
+					<!-- <th class="action">Action</th> -->
+					<%# end %>
+				</tr>
+			</thead>
+			<tbody class="table-body-background change-font">
+				<% @train.each do |tr|%>
+				<tr class="">
+					<td><%= tr.code %></td>
+					<td><%= tr.train_name %></td>
+					<td><%= tr.arrives %></td>
+					<td><%= tr.departure %></td>
+					<td><%= tr.stop_time %></td>
+					<td><%= tr.days %></td>
+					<%# if current_user.has_role? :admin %>
+					<!-- <td>
+						<%#= link_to image_tag("icon-edit.png"), edit_hospital_path(hos.id), :title => "Edit", 'data-no-turbolink' => true %>
+						
+						<%#= link_to image_tag("icon-deleted.png"), hospital_path(hos.id), method: :delete, data: {confirm: 'Are u sure'}, :title => "Delete"  %>
+					</td> -->
+					<%# end %>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<a class="btn btn-primary" href="/" type="cancel">
+			Back
+		</a>
+		<!-- <a onclick="javascript:print(); return false;" href="#" class="btn btn-primary"><span class=""></span>&nbsp;Print
+	    </a> -->
+    </div>
+
+</div>

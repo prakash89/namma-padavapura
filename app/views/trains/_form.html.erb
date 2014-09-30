@@ -1,0 +1,45 @@
+<%= form_for @train, :html => { :multipart => true, :class => '',:autocomplete => 'off'} do |f| %>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :code, :class => "form-control",
+		:placeholder => "Code"%>
+	</div>
+</div></br></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :train_name, :class => "form-control",
+		:placeholder => "Name"%>
+	</div>
+</div></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :arrives, :class => "form-control",
+		:placeholder => "Arraives"%>
+	</div>
+</div></br></br>
+
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :departure, :class => "form-control",
+		:placeholder => "Departure"%>
+	</div>
+</div></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :stop_time, :class => "form-control",
+		:placeholder => "Stop Time"%>
+	</div>
+</div></br></br>
+<div class="form-group">
+	<div class="col-sm-12">
+		<%= f.text_field :days, :class => "form-control",
+		:placeholder => "Days"%>
+	</div>
+</div>
+<div class="creat_village_btn create_btn_position_fix">
+	<button class="btn btn-primary" type="submit">
+		<span class=""></span>&nbsp;&nbsp;
+		Create Train
+	</button>
+</div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  train_name: MyString
+  arrives: MyString
+  departure: MyString
+  stop_time: MyString
+  days: MyString
+
+two:
+  code: 1
+  train_name: MyString
+  arrives: MyString
+  departure: MyString
+  stop_time: MyString
+  days: MyString

@@ -19,3 +19,13 @@ $(document).on("focus", '.datepicker_expires_on', function() {
     yearRange: "-200:+200"
   }).datepicker( "show" );
 });
+
+$(document).on("click", "#preference_required_field", function(){
+  $('#preference_required_field').parent().addClass('active');
+  $('#preference_edit_favorite').parent().removeClass('active'); 
+});
+  
+$(document).on("click", "#preference_edit_favorite", function(){
+  $('#preference_required_field').parent().removeClass('active');
+  $('#preference_edit_favorite').parent().addClass('active'); 
+});

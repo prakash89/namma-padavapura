@@ -131,3 +131,8 @@
 .center-align-name {
     text-align: center;
 }
+
+.list-view thead tr th {
+    background-color: #54789a !important;
+    color: #ffffff !important;
+}
