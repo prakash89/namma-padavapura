@@ -1,36 +1,125 @@
 <div class="navbar-wrapper">
-	<div class="container" style="background:#eee; height: 1000px">
-	<h1>Namma Pandavapura</h1>
-    <div class="header-border border_position"></div>
-    <div class="new_villade_position">
-    	<a class="btn btn-primary" href="/" type="cancel">
-    		Home
-    	</a>
-    </div>
-		<h2>Images on Pandavapura</h2></br>
+    <%= render :partial => "header"%>
+	<div class="container" style="background:#eee; height: 1100px">
+		<!-- <h1>Namma Pandavapura</h1> -->
+		<h2>Images of Pandavapura</h2>
+		<div class="new_villade_position">
+			<a class="btn btn-primary" href="/" type="cancel">
+				Home
+			</a>
+		</div>
+		<div class="header-border border_position"></div>
+		<!-- <h2>Images on Pandavapura</h2></br> -->
+			<%= link_to image_tag("images_1.jpg"), "#hello1", :class => "fancybox" %>
+			<%= link_to image_tag("me.jpg"), "#hello2", :class => "fancybox" %>
+			<%= link_to image_tag("kuntibetta.jpg"), "#hello3", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00063.JPG"), "#hello4", :class => "fancybox" %>
+			<div class="photo-padding-fix">
+			<%= link_to image_tag("DSC00064.JPG"), "#hello5", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00037.JPG"), "#hello6", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00056.JPG"), "#hello7", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00026.JPG"), "#hello8", :class => "fancybox" %>
+			</div>
+			<div class="photo-padding-fix">
+			<%= link_to image_tag("DSC00107.JPG"), "#hello9", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00092.JPG"), "#hello10", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00066.JPG"), "#hello11", :class => "fancybox" %>
+			<%= link_to image_tag("index.jpeg"), "#hello12", :class => "fancybox" %>
+			</div>
+			<div class="photo-padding-fix">
+			<%= link_to image_tag("pu1.jpeg"), "#hello13", :class => "fancybox" %>
+			<%= link_to image_tag("pu2.jpeg"), "#hello14", :class => "fancybox" %>
+			<%= link_to image_tag("pu3.jpeg"), "#hello15", :class => "fancybox" %>
+			<%= link_to image_tag("DSC00062.JPG"), "#hello16", :class => "fancybox" %>
+			</div>
 		<div>
-		<img src="assets/images_1.jpg" alt="First slide">&nbsp;
-		<img src="assets/me.jpg" alt="First slide">&nbsp;
-		<img src="assets/kuntibetta.jpg" alt="First slide">&nbsp;
-		<img src="assets/DSC00063.JPG" alt="First slide"></br>
+			<div style="display:none;">
+			<div id="hello1">
+				<img src="assets/images_2.jpg" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello2">
+			<img src="assets/me.jpg" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello3">
+			<img src="assets/kuntibetta.jpg" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello4">
+			<img src="assets/DSC00063.JPG" alt="First slide"></br>
+			</div>
+			</div>
 		</div>
 		<div class="photo-padding-fix">
-		<img src="assets/DSC00064.JPG" alt="First slide">&nbsp;
-		<img src="assets/DSC00037.JPG" alt="First slide">&nbsp;
-		<img src="assets/DSC00056.JPG" alt="First slide">&nbsp;
-		<img src="assets/DSC00026.JPG" alt="First slide">
+		<div style="display:none;">
+			<div id="hello5">
+			<img src="assets/DSC00064.JPG" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello6">
+			<img src="assets/DSC00037.JPG" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello7">
+			<img src="assets/DSC00056.JPG" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello8">
+			<img src="assets/DSC00026.JPG" alt="First slide">
+			</div>
+			</div>
 		</div>
 		<div class="photo-padding-fix">
-		<img src="assets/DSC00107.JPG" alt="First slide">&nbsp;
-		<img src="assets/DSC00092.JPG" alt="First slide">&nbsp;
-		<img src="assets/DSC00066.JPG" alt="First slide">&nbsp;
-		<img src="assets/index.jpeg" alt="First slide">
+		<div style="display:none;">
+			<div id="hello9">
+			<img src="assets/DSC00107.JPG" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello10">
+			<img src="assets/DSC00092.JPG" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello11">
+			<img src="assets/DSC00066.JPG" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello12">
+			<img src="assets/index.jpeg" alt="First slide">
+			</div>
+			</div>
 		</div>
 		<div class="photo-padding-fix">
-		<img src="assets/pu1.jpeg" alt="First slide">&nbsp;
-		<img src="assets/pu2.jpeg" alt="First slide">&nbsp;
-		<img src="assets/pu3.jpeg" alt="First slide">&nbsp;
-		<img src="assets/DSC00062.JPG" alt="First slide">
+		<div style="display:none;">
+			<div id="hello13">
+			<img src="assets/pu1.jpeg" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello14">
+			<img src="assets/pu2.jpeg" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello15">
+			<img src="assets/pu3.jpeg" alt="First slide">
+			</div>
+			</div>&nbsp;
+			<div style="display:none;">
+			<div id="hello16">
+			<img src="assets/DSC00062.JPG" alt="First slide">
+			</div>
+			</div>
 		</div>
+		<%= render :partial => 'footer' %></br></br>
 	</div>
 </div>

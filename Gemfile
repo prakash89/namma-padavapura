@@ -40,6 +40,12 @@ gem "rmagick"
 
 gem "carrierwave"
 
+gem 'fancybox-rails'
+
+gem 'omniauth-facebook'
+
+gem 'omniauth-twitter'
+
 #gem 'calendar_date_select', :git => 'git://github.com/paneq/calendar_date_select.git'
 
 # Use ActiveModel has_secure_password

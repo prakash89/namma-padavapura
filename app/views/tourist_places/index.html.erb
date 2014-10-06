@@ -1,19 +1,21 @@
+<%= render :partial => "header"%>
 <div class="container" style="background:#eee; height: 2500px">
-<h1>Namma Pandavapura</h1>
-    <div class="header-border border_position"></div>
+<!-- <h1>Namma Pandavapura</h1> -->
     <%# if current_user.has_role? :admin %>
 	<!-- <div class="creat_school_btn">
 		<a class="btn btn-primary" href="/tourist_places/new" type="submit">
 			Create New Place
 		</a>
 	</div> -->
+	<h2>List of Tourist Places</h2>
 	<div class="new_villade_position">
     	<a class="btn btn-primary" href="/" type="cancel">
     		Home
     	</a>
     </div>
+    <div class="header-border border_position"></div>
 	<%# end %>
-	<h2><u>List of Place</u></h2>
+	
 	<!-- <div class="header-border"></div> -->
 	<% @place.each do |plc|%>
 	<div>
@@ -45,9 +47,10 @@
 	</div>
 	<div class="row journal-entry-devider"> </div>
 	<% end %>
-	<a class="btn btn-primary" href="/" type="cancel">
+	<div><a class="btn btn-primary" href="/" type="cancel">
 		Back
 	</a>
 	<a onclick="javascript:print(); return false;" href="#" class="btn btn-primary"><span class=""></span>&nbsp;Print
-    </a>
+    </a></div></br></br>
+    <%= render :partial => 'footer' %></br></br>
 </div>

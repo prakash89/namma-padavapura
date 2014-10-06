@@ -1,11 +1,20 @@
+<%= render :partial => "header"%>
 <div class="container" style="background:#eee; height: 1000px">
-<h1>Namma Pandavapura</h1>
-    <div class="header-border border_position"></div>
+<!-- <h1>Namma Pandavapura</h1> -->
     <%# if current_user.has_role? :admin %>
 	<!-- <div class="creat_school_btn">
 		<a class="btn btn-primary" href="/schools/new" type="submit">
 			Create New School
 		</a>
 	</div> -->
+	<h2>List of Schools in City</h2>
+	<div class="new_villade_position">
+    	<a class="btn btn-primary" href="/" type="cancel">
+    		Home
+    	</a>
+    </div>
+    <div class="header-border border_position"></div>
+	<%# end %>
+	
 	<%= render :partial => "index_form" %>
 </div>

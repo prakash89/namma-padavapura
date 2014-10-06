@@ -1,63 +1,7 @@
-
-<!-- NAVBAR
-  ================================================== -->
-  <!-- <body> -->
-  <div class="navbar-wrapper">
-    <!-- <div class="container"> -->
-
-      <div class="navbar navbar-inverse navbar-static-top space_remove" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <!-- <a class="navbar-brand" href="/">ನಮ್ಮ ಪಾಂಡವಪುರ</a> -->
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="/">ನಮ್ಮ ಪಾಂಡವಪುರ</a></li>
-              <li><a href="<%= about_us_path %>">About</a></li>
-              <li><a href="<%= contact_path %>">Contact</a></li>
-              <li><a href="<%= villages_path %>">List of Villages</a></li>
-              <li><a href="/galary">Gallary</a></li>
-              <li><a href="/information">Information</a></li>
-              <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li> -->
-              <!-- <li>
-              <div id="user_nav" class="signup_btn_position">
-                  <%# if current_user %>
-                  <%#= link_to "Log out", log_out_path %>
-                  <%# else %>
-                  <%#= link_to "Sign up", new_user_path, :remote => true %> or
-                  <%#= link_to "log in", new_session_path, :remote => true %>
-                  <%# end %>
-                </div>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<%= render :partial => "header"%>
+<!-- Carousel
+================================================== -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -139,7 +83,7 @@
         <div class="col-md-6">
           <h2 class="featurette-heading">Governament Bus Stand. <span class="text-muted">It'll blow your mind.</span></h2>
           <div class="lead">Bus service is provided by KSRTC runs buses that connect Pandavapura to other places in Karnataka and a few buses to other states. It was started service on 2007 inagurated by Kumaraswamy former chief minster Karnataka governament.</div>
-          <p><a class="btn btn-default" href="<%= offices_path %>" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="<%= buses_path %>" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-6">
           <img class="featurette-image img-responsive" src="assets/IMG_20140929_170853929_HDR.jpg" alt="Generic placeholder image">
@@ -179,20 +123,23 @@
 
         <div class="row contact-margin">
           <h2><u>Find Yourself In Pandavapura</u></h2></br>
+          <div class="col-sm-3">
           <figure class="page6-img1 img-bot">
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=11867+Padavapura,+Mandya,+Karnataka+571434,+India&key=AIzaSyCjd98SBT0PO8q7tP-lfYwzForr2YMFi9Y" width="1170" height="570" frameborder="0" style="border:1px solid"></iframe>
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=11867+Padavapura,+Mandya,+Karnataka+571434,+India&key=AIzaSyCjd98SBT0PO8q7tP-lfYwzForr2YMFi9Y" width="1170" height="570" frameborder="0" style="border:1px solid" class='resposive-map'></iframe>
           </figure>
-        </div>
+          </div>
+        </div></br>
 
 
         <!-- FOOTER -->
+          <%= render :partial => "footer"%></br>
         <footer>
           <p class="pull-right"><a href="#">Back to top</a></p>
           <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
 
-      <!-- </div> -->
-      <!-- /.container -->
+        <!-- </div> -->
+        <!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript

@@ -65,3 +65,12 @@ function hide() {
   }
   return false;
 }
+
+function PopoverForEndorsment(){
+  $('.popoverData1').popover();
+  $('.popoverData2').popover();
+  $('.popoverData3').popover();
+  $('.popoverData4').popover();
+  $('.popoverData5').popover();
+  $('.popoverOption').popover({ trigger: "hover" });
+}

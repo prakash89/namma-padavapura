@@ -18,5 +18,6 @@
  *= require bootstrap-theme.min
  *= require bootstrap-theme.css.map
  *= require custom
+ *= require fancybox
  *= require_self
  */

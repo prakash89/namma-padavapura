@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap.min
+//= require fancybox
 //= require utility
 //= require event
 //= require ajax_setup

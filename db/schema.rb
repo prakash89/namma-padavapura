@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140929065454) do
+ActiveRecord::Schema.define(version: 20141004054009) do
+
+  create_table "buses", force: true do |t|
+    t.string   "vlg_name"
+    t.string   "timing"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "events", force: true do |t|
     t.string   "event_name"
@@ -97,6 +104,11 @@ ActiveRecord::Schema.define(version: 20140929065454) do
     t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
   end
 
   create_table "users_roles", id: false, force: true do |t|

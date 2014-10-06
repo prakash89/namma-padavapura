@@ -1,20 +1,21 @@
 <!-- <div class="navbar-wrapper"> -->
-	<div class="container" style="background:#eee; height: 1000px">
+    <%= render :partial => "header"%>
+  <div class="container" style="background:#eee; height: 800px">
     <!-- <div class="jumbotron"> -->
     <%#= render :partial => "home_page/header" %>
-    <h1>Namma Pandavapura</h1>
-    <div class="header-border border_position"></div>
+    <h2>List of VIllages in Pandavapura</h2>
     <%# if current_user.has_role? :admin %>
-			<!-- <div class="new_villade_position">
-				<a class="btn btn-primary" href="/villages/new" type="submit">
-					Create New Village
-				</a>
-			</div> -->
+      <!-- <div class="new_villade_position">
+        <a class="btn btn-primary" href="/villages/new" type="submit">
+          Create New Village
+        </a>
+      </div> -->
       <div class="new_villade_position">
       <a class="btn btn-primary" href="/" type="cancel">
         Home
       </a>
     </div>
+    <div class="header-border border_position"></div>
       <%# end %>
             <%= form_tag villages_path, :method => 'get' do %>
             <div class="search_field">
@@ -39,7 +40,7 @@
                <th class="coupon-width">Area in Hectares</th>
                <th class="coupon-width">Village Code</th>
                <%# if current_user.has_role? :admin %>
-               <!-- <th class="Last-access">Action</th> -->
+               <th class="Last-access">&nbsp;</th>
                <%# end %>
            </tr>
        </thead>
@@ -69,11 +70,13 @@
 <div class="pagination" >
 <%= paginate @village %>
 </div><br>
+<div>
 <a class="btn btn-primary" href="/" type="cancel">
     Back
-</a>
+</a></div></br>
 <!-- <a onclick="javascript:print(); return false;" href="#" class="btn btn-primary"><span class=""></span>&nbsp;Print
 </a> -->
+<%= render :partial => 'footer' %></br></br>
 </div>
 <!-- </div> -->
 <!-- </div> -->

@@ -1,10 +1,18 @@
+/*Bootstrap*/
+.table > thead > tr > th {
+    background-color: #54789a;
+    color: #fff;
+}
+
 .center-aln {
 	text-align: center;
 }
 
 .new_villade_position {
 	float: right;
-	/*margin-left: 40px;*/
+    margin-top: -50px;
+    padding-top: 10px;
+    /*margin-left: 40px;*/
 }
 
 .creat_village_btn {
@@ -109,7 +117,7 @@
     line-height: 1.42857;
     padding: 6px 12px;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-	width: 50%;
+    width: 50%;
 }
 
 .space_remove {
@@ -135,4 +143,49 @@
 .list-view thead tr th {
     background-color: #54789a !important;
     color: #ffffff !important;
+}
+
+.footer-border {
+    border-top: 1px solid #949494;
+}
+
+.social-media-link {
+    margin-left: 500px;
+    padding-top: 15px;
+    float: right;
+}
+
+.social-icon-position {
+    float: right;
+    padding-top: 10px;
+}
+
+@media (max-width:480px) {
+    .resposive-map {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .resposive-map {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .resposive-map {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 998px) and (max-width: 1199px){
+    .resposive-map {
+        width: 100% !important;
+    }
+}
+
+@media (width:990px)  {
+.resposive-map {
+        width: 100% !important;
+    }
 }

@@ -1,13 +1,15 @@
 <div class="navbar-wrapper">
-	<div class="container" style="background:#eee; height: 1500px">
-		<h1>Namma Pandavapura</h1>
-		<div class="header-border border_position"></div>
+<%= render :partial => "header"%>
+	<div class="container" style="background:#eee; height: 1200px">
+		<!-- <h1>Namma Pandavapura</h1> -->
+		<h2>Elected Representatives</h2>
 		<div class="new_villade_position">
     	<a class="btn btn-primary" href="/" type="cancel">
     		Home
     	</a>
-    </div></br></br>
-		<h2><u>Elected Representatives</u></h2></br>
+    </div>
+		<div class="header-border border_position"></div>
+		
 		<table class="table table-striped table-hover">
 		<thead>
 			<tr>
@@ -61,6 +63,6 @@
 	<!--<script language="JavaScript" type="text/javascript"> 
  document.write('<script language="JavaScript" src="http://www.myweather2.com/Plugins/weather/general.ashx?type=js&n=2&t=24&x=f1_day&inc=False&w=230&h=320&headerbgcolor=284252&headertextcolor=080808 &temp_unit=1&windspeed_unit=2&puref=9e1be826-fbfc-4c87-95ac-c1f3ea767167&cb=' + Math.random() + '" type="text/javascript"><\/scr' + 'ipt>');
  </script><noscript><a href="http://www.myweather2.com/Mandya/India/Karnataka/Rails.aspx" title="Rails">Rails weather forecast from Weather2</a></noscript>-->
-
+<%= render :partial => 'footer' %></br></br>
 	</div>
 </div>

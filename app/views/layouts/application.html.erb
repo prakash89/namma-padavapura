@@ -16,6 +16,13 @@
     <%#= link_to "log in", new_session_path %>
   <%# end %>
 </div> -->
+<%# if current_user %>
+     <!-- Signed in as <strong><%#= current_user.name %></strong> -->
+    <%#= link_to "Sign out", log_out_path, id: "sign_out" %>
+  <%# else %>
+    <%#= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+    <%#= link_to "Twitter", "/auth/twitter" %>
+  <%# end %>
 
 <% flash.each do |name, msg| %>
   <%= content_tag :div, msg, :id => "flash_#{name}" %>
@@ -26,6 +33,7 @@
 <body>
 
 <%= yield %>
+<%#= render :partial => 'footer' %>
 <%= render :partial => 'pop_ups' %>
 
 <%#* Display Hidden Overlays -%>
