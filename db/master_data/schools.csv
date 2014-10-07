@@ -1,0 +1,12 @@
+school_id, name, address, type, created_at, updated_at
+"2", "Nirmala convent", "Near Charch", "Private", "", ""
+"3", "Govenament PU collage", "Opposite old AC office", "Govrnament", "", ""
+"9", "Rotary convent", "Opposite to BSNL office", "Private", "", ""
+"10", "Buds Fundation", "Near government bus stand", "Private", "", ""
+"12", "Girls PU collage", "Beside BSNL office", "Aided", "", ""
+"13", "Vijaya Degree collage", "Beside play ground", "Aided", "", ""
+"14", "Vijaya PU collage", "Beside play ground", "Aided", "", ""
+"15", "Governament primary school", "Birashettihalli", "Govrnament", "", ""
+"16", "Nilgirish school", "Dolores coloni", "Private", "", ""
+"17", "BGS public school", "Opposite to BEO office", "Private", "", ""
+"18", "Governament Degree collage", "Opposite to Post office", "Governament", "", ""

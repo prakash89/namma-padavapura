@@ -67,10 +67,27 @@ function hide() {
 }
 
 function PopoverForEndorsment(){
-  $('.popoverData1').popover();
-  $('.popoverData2').popover();
-  $('.popoverData3').popover();
-  $('.popoverData4').popover();
-  $('.popoverData5').popover();
+  $('#popoverData1').popover();
+  $('#popoverData2').popover();
+  $('#popoverData3').popover();
+  $('#popoverData4').popover();
+  $('#popoverData5').popover();
+  $('#popoverData6').popover();
+  $('#popoverData7').popover();
+  $('#popoverData8').popover();
+  $('#popoverData9').popover();
+  $('#popoverData10').popover();
+  $('#popoverData11').popover();
+  $('#popoverData12').popover();
+  $('#popoverData13').popover();
+  $('#popoverData14').popover();
+  $('#popoverData15').popover();
+  $('#popoverData16').popover();
+  $('#popoverData17').popover();
+  $('#popoverData18').popover();
+  $('#popoverData19').popover();
+  $('#popoverData20').popover();
+  $('#popoverData21').popover();
+  $('#popoverData22').popover();
   $('.popoverOption').popover({ trigger: "hover" });
 }
