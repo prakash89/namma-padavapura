@@ -72,11 +72,11 @@ function PopoverForEndorsment(){
   $('.popoverData3').popover();
   $('.popoverData4').popover();
   $('.popoverData5').popover();
-  $('.popoverData6').popover();
-  $('.popoverData7').popover();
-  $('.popoverData8').popover();
-  $('.popoverData9').popover();
-  $('.popoverData10').popover();
+  $('.popoverData2').popover();
+  $('.popoverData2').popover();
+  $('.popoverData2').popover();
+  $('.popoverData2').popover();
+  $('.popoverData2').popover();
   $('.popoverData11').popover();
   $('.popoverData12').popover();
   $('.popoverData13').popover();
