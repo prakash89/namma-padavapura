@@ -189,3 +189,9 @@
         width: 100% !important;
     }
 }
+.image-position {
+    margin-top: -25px !important;
+}
+.custom-class {
+    float: right;
+}

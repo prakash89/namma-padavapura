@@ -11,13 +11,14 @@
  * file per style scope.
  *
  *= require_tree .
- *= require bootstrap
  *= require bootstrap.min
- *= require bootstrap.css.map
- *= require bootstrap-theme
- *= require bootstrap-theme.min
- *= require bootstrap-theme.css.map
  *= require custom
+ *= require main
+ *= require media-queries
+ *= require normalize.min
+ *= require owl.carousel
+ *= require font-awesome.min
+ *= require animate
  *= require fancybox
  *= require_self
  */

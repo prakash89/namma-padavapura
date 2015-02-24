@@ -48,14 +48,14 @@
               </li> -->
               <li>
               <div class="social-media-link">
-              <% if current_user %>
+              <%# if current_user %>
               <!-- Signed in as <strong><%#= current_user.name %></strong>! -->
-              <%= link_to "Sign out", log_out_path, id: "sign_out" %>
-              <% else %>
-              <%= link_to image_tag('fc.png'), "/auth/facebook", id: "sign_in" %>
-              <%= link_to image_tag("images (1).jpg"), "/auth/twitter" %>
+              <%#= link_to "Sign out", log_out_path, id: "sign_out" %>
+              <%# else %>
+              <%#= link_to image_tag('fc.png'), "/auth/facebook", id: "sign_in" %>
+              <%#= link_to image_tag("images (1).jpg"), "/auth/twitter" %>
 
-              <% end %>
+              <%# end %>
               </div>
               </li>
             </ul>
