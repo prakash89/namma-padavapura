@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.validate
+//= require jquery.form
 //= require bootstrap
 //= require bootstrap.min
 //= require utility

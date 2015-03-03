@@ -1,5 +1,6 @@
     <body id="body">
-  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <!-- preloader -->
     <div id="preloader">
       <img src="assets/preloader.gif" alt="Preloader">
@@ -67,7 +68,7 @@
         <div class="carousel-inner" role="listbox">
           
           <!-- single slide -->
-          <div class="item active" style="background-image: url(assets/banner.jpg);">
+          <div class="item active" style="background-image: url(assets/DSC00067.JPG);">
             <div class="carousel-caption">
               <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Namma<span> Pandavapura</span>!</h2>
               <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">Town</span> of sugar.</h3>
@@ -84,7 +85,7 @@
           <!-- end single slide -->
           
           <!-- single slide -->
-          <div class="item" style="background-image: url(assets/banner.jpg);">
+          <div class="item" style="background-image: url(assets/travel-kunti-betta2.jpg);">
             <div class="carousel-caption">
               <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Namma<span> Pandavapura</span>!</h2>
               <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">Town</span> of peace.</h3>
@@ -114,66 +115,7 @@
         Features
         ==================================== -->
     
-    <section id="features" class="features">
-      <div class="container">
-        <div class="row">
-        
-          <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-            <h2>Most wanted places</h2>
-            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-
-          <!-- service item -->
-          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa fa-github fa-2x"></i>
-              </div>
-              
-              <div class="service-desc">
-                <h3>Schools</h3>
-                <p>A school is an institution designed for teaching of students (or "pupils") under the direction of teachers. We have lot of good schools in this city and also provided formal and excellent education to childrens. If you want to know the list of schools, click below button.</p>
-                <a class="btn btn-default" role="button" href="/schools">View details »</a>
-              </div>
-            </div>
-          </div>
-          <!-- end service item -->
-          
-          <!-- service item -->
-          <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa fa-pencil fa-2x"></i>
-              </div>
-              
-              <div class="service-desc">
-                <h3>Hospitals</h3>
-                <p>A hospital is a health care institution providing patient treatment with specialised staff and equipment. In Pandavapura, we can see good and well facilitated hospitals. And also, we can see many nursing homes. If you want to see list of hospitals, click below button.</p>
-                <a class="btn btn-default" role="button" href="/hospitals">View details »</a>
-              </div>
-            </div>
-          </div>
-          <!-- end service item -->
-          
-          <!-- service item -->
-          <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
-            <div class="service-item">
-              <div class="service-icon">
-                <i class="fa fa-bullhorn fa-2x"></i>
-              </div>
-              
-              <div class="service-desc">
-                <h3>Tourist Places</h3>
-                <p>Pandavapura is a normal city, it is not a tourist place but there are many touriest places near to the city like Melukote, KRS, Kerethonnur and Kunthi betta. Please click below button to see list of tourist places. </p>
-                <a class="btn btn-default" role="button" href="/tourist_places">View details »</a>
-              </div>
-            </div>
-          </div>
-          <!-- end service item -->
-            
-        </div>
-      </div>
-    </section>
+    <%= render :partial => "place" %>
     
         <!--
         End Features
@@ -190,165 +132,13 @@
         End Our Works
         ==================================== -->
 
-    <section id="works" class="team">
-      <div class="container">
-        <div class="row">
-    
-          <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>For Your Help</h2>
-            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-          
-          <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-            <p>Here we can find governament bus timing, train timing, governament offices and list of villages in Pandavapura. </p>
-          </div>
-
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-            <div class="member-thumb">
-              <img src="assets/IMG_20140929_170853929_HDR.jpg" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>Click below button for see bus timings. </h5>
-                <a class="btn btn-default" role="button" href="/buses">View details »</a>
-              </figcaption>
-            </div>
-            <h4>Governament Bus Stand</h4>
-            <span>You can find here bus timings.</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-            <div class="member-thumb">
-              <img src="assets/rail.jpg" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>Click below button for see train timings. </h5>
-                <a class="btn btn-default" role="button" href="/trains">View details »</a>
-              </figcaption>
-            </div>
-            <h4>Railway Station</h4>
-            <span>You can find here train timings.</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-            <div class="member-thumb">
-              <img src="assets/IMG_20140929_171708837_HDR.jpg" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>Click below button for see offices. </h5>
-                <a class="btn btn-default" role="button" href="/offices">View details »</a>
-              </figcaption>
-            </div>
-            <h4>Governament Ofiices</h4>
-            <span>You can find list here of governament offices.</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-            <div class="member-thumb">
-              <img src="assets/DSC00063.JPG" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>Click below button for see villages. </h5>
-                <a class="btn btn-default" role="button" href="/villages">View details »</a>
-              </figcaption>
-            </div>
-            <h4>List of Villages</h4>
-            <span>You can find here list of villages. </span>
-          </figure>
-          <!-- end single member -->
-          
-        </div>
-      </div>
-    </section>
+    <%= render :partial => "help" %>
     
         <!--
-        Meet Our Team
+        Meet Our Team%
         ==================================== -->    
     
-    <section id="team" class="team">
-      <div class="container">
-        <div class="row">
-    
-          <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>Meet Our Team</h2>
-            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-          
-          <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-          </div>
-
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-            <div class="member-thumb">
-              <img src="assets/rsz_img_20141029_181430387.jpg" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-              </figcaption>
-            </div>
-            <h4>Prakash S L</h4>
-            <span>Softwear developer</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-            <div class="member-thumb">
-              <img src="assets/imgo.jpg" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-              </figcaption>
-            </div>
-            <h4>Harshith Y C</h4>
-            <span>Tester</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-            <div class="member-thumb">
-              <img src="assets/team/member-3.png" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-                <ul class="social-links text-center">
-                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
-              </figcaption>
-            </div>
-            <h4>Steve Flaulkin</h4>
-            <span>Sr. UI Designer</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-            <div class="member-thumb">
-              <img src="assets/team/member-1.png" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-                <ul class="social-links text-center">
-                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
-              </figcaption>
-            </div>
-            <h4>John Filmr Doe</h4>
-            <span>Managing Director</span>
-          </figure>
-          <!-- end single member -->
-          
-        </div>
-      </div>
-    </section>
+    <%= render :partial => "team" %>
     
         <!--
         End Meet Our Team
@@ -358,55 +148,7 @@
         Some fun facts
         ==================================== -->    
     
-    <section id="facts" class="facts">
-      <div class="parallax-overlay">
-        <div class="container">
-          <div class="row number-counters">
-            
-            <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-              <h2>Some Fun Facts</h2>
-              <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-            </div>
-            
-            <!-- first count item -->
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-              <div class="counters-item">
-                <i class="fa fa-clock-o fa-3x"></i>
-                <strong data-to="20423">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p>Population in town</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-              <div class="counters-item">
-                <i class="fa fa-users fa-3x"></i>
-                <strong data-to="2.50">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p>Town Area in sq.km</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-              <div class="counters-item">
-                <i class="fa fa-rocket fa-3x"></i>
-                <strong data-to="18">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p> Number of Wards </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-              <div class="counters-item">
-                <i class="fa fa-trophy fa-3x"></i>
-                <strong data-to="42">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p>Length of Roads in km</p>
-              </div>
-            </div>
-            <!-- end first count item -->
-        
-          </div>
-        </div>
-      </div>
-    </section>
+    <%= render :partial => "facts" %>
     
         <!--
         End Some fun facts
@@ -417,100 +159,14 @@
         Contact Us
         ==================================== -->    
     
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="row mb50">
-        
-          <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
-            <h2>Let’s Discuss</h2>
-            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-          
-          <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-            <p>You can contact us here, if you have any suggestion please send it here.</p>
-          </div>
-          
-          <!-- contact address -->
-          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
-            <div class="contact-address">
-              <h3>Qwinix technologies</h3>
-              <p>Special Plot No. 5, Horizon,</p>
-              <p>HIEMA Convention Center Road,</p>
-              <p>Hebbal Industrial Estate,</p>
-              <p>Mysore – 570016</p>
-            </div>
-          </div>
-          <!-- end contact address -->
-          
-          <!-- contact form -->
-          <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
-            <div class="contact-form">
-              <h3>Say hello!</h3>
-              <%= form_tag email_contact_path, :id => 'contact_email_form', :class => 'new-contact-padding', :authenticity_token => true do %>
-                <div class="input-group name-email">
-                  <div class="input-field">
-                    <input type="text" class="form-control" autocomplete="off" placeholder="Your Name&nbsp;*" name="contact[name]" value=<%= @name || '' %> >
-                  </div>
-                  <div class="input-field">
-                    <input type="email" class="form-control" autocomplete="off" placeholder="Your E-mail Address&nbsp;*" name="contact[email]" value=<%= @email || '' %>>
-                  </div>
-                </div>
-                <div class="input-group">
-                  <textarea class="form-control" placeholder="Message&nbsp;*" name="contact[message]" value=<%= @message || '' %> ></textarea>
-                </div>
-                <div class="input-group">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-              <% end %>
-            </div>
-          </div>
-          <!-- end contact form -->
-          
-          
-        </div>
-      </div>
-      
-      <!-- Google map -->
-      <!-- <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div> -->
-      <figure class="page6-img1 img-bot">
-        <iframe src="https://www.google.com/maps/embed/v1/place?q=11867+Padavapura,+Mandya,+Karnataka+571434,+India&key=AIzaSyCjd98SBT0PO8q7tP-lfYwzForr2YMFi9Y" width="1170" height="370" frameborder="0" class='resposive-map'></iframe>
-      </figure>
-      <!-- End Google map -->
-      
-    </section>
+    <%= render :partial => "home_contact" %>
     
         <!--
         End Contact Us
         ==================================== -->
     
     
-    <footer id="footer" class="footer">
-      <div class="container">
-        <div class="row">
-        
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-            <div class="footer-single">
-              <img src="assets/qwinix.jpg" alt="">
-              <p>Qwinix Technologies Pvt. Ltd.
-                  Special Plot No. 5, Horizon,
-                  HIEMA Convention Center Road,
-                  Hebbal Industrial Estate,
-                  Mysore – 570016</p>
-            </div>
-          </div>
-        
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated custom-class" data-wow-duration="500ms" data-wow-delay="900ms">
-            <div class="footer-single">
-              <ul>
-                <li><a href="/about_us">About Us</a></li>
-                <li><a href="/information">Information</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </footer>
+    <%= render :partial => "home_page_footer" %>
     
     <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
 
@@ -528,61 +184,5 @@
     </script> 
     <!-- Custom Functions -->
     
-    <script type="text/javascript">
-      $(function(){
-        /* ========================================================================= */
-        /*  Contact Form
-        /* ========================================================================= */
-        
-        $('#contact-form').validate({
-          rules: {
-            name: {
-              required: true,
-              minlength: 2
-            },
-            email: {
-              required: true,
-              email: true
-            },
-            message: {
-              required: true
-            }
-          },
-          messages: {
-            name: {
-              required: "come on, you have a name don't you?",
-              minlength: "your name must consist of at least 2 characters"
-            },
-            email: {
-              required: "no email, no message"
-            },
-            message: {
-              required: "um...yea, you have to write something to send this form.",
-              minlength: "thats all? really?"
-            }
-          },
-          submitHandler: function(form) {
-            $(form).ajaxSubmit({
-              type:"POST",
-              data: $(form).serialize(),
-              url:"process.php",
-              success: function() {
-                $('#contact-form :input').attr('disabled', 'disabled');
-                $('#contact-form').fadeTo( "slow", 0.15, function() {
-                  $(this).find(':input').attr('disabled', 'disabled');
-                  $(this).find('label').css('cursor','default');
-                  $('#success').fadeIn();
-                });
-              },
-              error: function() {
-                $('#contact-form').fadeTo( "slow", 0.15, function() {
-                  $('#error').fadeIn();
-                });
-              }
-            });
-          }
-        });
-      });
-    </script>
-    </body>
-</html>
+   
+  </body>

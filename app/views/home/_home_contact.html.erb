@@ -1,0 +1,60 @@
+<section id="contact" class="contact">
+      <div class="container">
+        <div class="row mb50">
+        
+          <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+            <h2>Let’s Discuss</h2>
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+          </div>
+          
+          <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+            <p>You can contact us here, if you have any suggestion please send it here.</p>
+          </div>
+          
+          <!-- contact address -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+            <div class="contact-address">
+              <h3>Qwinix technologies</h3>
+              <p>Special Plot No. 5, Horizon,</p>
+              <p>HIEMA Convention Center Road,</p>
+              <p>Hebbal Industrial Estate,</p>
+              <p>Mysore – 570016</p>
+            </div>
+          </div>
+          <!-- end contact address -->
+          
+          <!-- contact form -->
+          <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="contact-form">
+              <h3>Say hello!</h3>
+              <%= form_tag email_contact_path, :id => 'contact-form', :class => 'new-contact-padding', :authenticity_token => true do %>
+                <div class="input-group name-email">
+                  <div class="input-field">
+                    <input type="text" class="form-control" autocomplete="off" placeholder="Your Name&nbsp;*" name="contact[name]" value=<%= @name || '' %> >
+                  </div>
+                  <div class="input-field">
+                    <input type="email" class="form-control" autocomplete="off" placeholder="Your E-mail Address&nbsp;*" name="contact[email]" value=<%= @email || '' %>>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <textarea class="form-control" placeholder="Message&nbsp;*" name="contact[message]" value=<%= @message || '' %> ></textarea>
+                </div>
+                <div class="input-group">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              <% end %>
+            </div>
+          </div>
+          <!-- end contact form -->
+          
+          
+        </div>
+      </div>
+      
+      <!-- Google map -->
+      <!-- <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div> -->
+      <figure class="page6-img1 img-bot">
+        <iframe src="https://www.google.com/maps/embed/v1/place?q=11867+Padavapura,+Mandya,+Karnataka+571434,+India&key=AIzaSyCjd98SBT0PO8q7tP-lfYwzForr2YMFi9Y" width="1170" height="370" frameborder="0" class='resposive-map'></iframe>
+      </figure>
+      <!-- End Google map -->
+      
+    </section>
