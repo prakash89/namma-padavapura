@@ -195,3 +195,12 @@
 .custom-class {
     float: right;
 }
+.place-colour-bus {
+    color: red;
+}
+.footer-link-color {
+    color: #708090 !important;
+}
+.pagination-color {
+    color: #708090 !important;
+}

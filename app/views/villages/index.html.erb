@@ -20,9 +20,10 @@
             <%= form_tag villages_path, :method => 'get' do %>
             <div class="search_field">
             <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-12">
+            <div class="col-sm-4">
                 <%= text_field_tag :search, params[:search], :class => " search_field_position" %>
-                </div>
+            </div>
                 <%#= submit_tag " Search", :name => nil, :class => 'search_btn_position'%>
                 <div class="col-sm-2">
                 <button class="btn btn-primary" type="submit">
@@ -30,6 +31,7 @@
                     Search
                 </button>
                 </div>
+            </div>
             </div>
             </div>
             <% end %></br></br>

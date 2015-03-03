@@ -4,7 +4,7 @@ namespace 'import' do
 desc "Import schools"
   task 'schools' => :environment do
     School.destroy_all
-    # School.connection.execute("truncate inotary_acts RESTART IDENTITY")
+    # School.connection.execute("truncate schools RESTART IDENTITY")
     path = File.join(Rails.root, "db", "master_data", "schools.csv")
     csv_table = CSV.table(path, {:headers => true, :converters => nil, :header_converters => :symbol})
     headers = csv_table.headers
