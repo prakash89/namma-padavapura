@@ -30,10 +30,10 @@ $(document).on("click", "#preference_edit_favorite", function(){
   $('#preference_edit_favorite').parent().addClass('active'); 
 });
 
-// $(document).ready(function() {
-//   $("a.fancybox").fancybox();
-//   // alert('hi');
-// });
+$(document).ready(function() {
+  $("a.fancybox").fancybox();
+  // alert('hi');
+});
 
 // $.fancybox({
 //       'width': '68%',

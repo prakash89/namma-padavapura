@@ -19,5 +19,6 @@
  *= require owl.carousel
  *= require font-awesome.min
  *= require animate
+ *= require fancybox
  *= require_self
  */
