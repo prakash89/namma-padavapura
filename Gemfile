@@ -6,9 +6,9 @@ gem 'rails', '4.1.4'
 # Use sqlite3 as the database for Active Record
 group :development do
  gem 'sqlite3'
- gem 'sass-rails', '~> 4.0.3'
 end
 
+ gem 'sass-rails', '~> 4.0.3'
 # Use SCSS for stylesheets
 
 # Use Uglifier as compressor for JavaScript assets
